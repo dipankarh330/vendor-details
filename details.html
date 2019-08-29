@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firm Details</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="details.css" type="text/css">
+
+    <script>
+            function validateForm(){
+
+                var x = document.forms["myForm"]["fname"].value;
+                if (x == "") {
+                    alert("all section must be filled out");
+                    return false;
+                }
+                var y = document.forms["myForm"]["year"].value;
+                if (y == "") {
+                    alert("all section must be filled out");
+                    return false;
+                }
+                var z = document.forms["myForm2"]["locality"].value;
+                if (z == "") {
+                    alert("all section must be filled out");
+                    return false;
+                }
+                var z = document.forms["myForm2"]["phone"].value;
+                if (z == "") {
+                    alert("all section must be filled out");
+                    return false;
+                }
+                var z = document.forms["myForm2"]["pin"].value;
+                if (z == "") {
+                    alert("all section must be filled out");
+                    return false;
+                }
+                var z = document.forms["myForm2"]["door"].value;
+                if (z == "") {
+                    alert("all section must be filled out");
+                    return false;
+                }
+
+
+                
+            }
+    </script>
+    
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="container">
+                    <h2 class="text-center" id="title">Welcome to DKR.com</h2>
+                    <p class="text-center">
+                        <small id="Developer" > Developer: follow me on facebook <a target="blank" href="https://www.facebook.com/dipankar.halder.940"> DIPANKAR  HALDER</a> and Follow me on Linked In <a target="blank" href="https://www.linkedin.com/in/dipankar-halder-455a1b135/"> Dipankar Halder</a></small>
+                    </p>
+                    <div class="hr">
+                        <hr id="s">
+                    </div>
+                        <h3 class="text-center">Submit all the Details</h3><br><br>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <!---blank--->
+                        </div>
+                        <div class="col-md-4">
+                            <form target="blank" action="message.html" name="myForm" onsubmit="return validateForm()" method="POST" id="dtl">
+                                <h4>Firm Details</h4>
+                                <p id="details">Firm name:</p>
+                                <input type="text" name="fname" placeholder="Enter Name" id="name">
+                                <p id="details">Firm Type:</p>
+                                <select id="option" name="firm">
+                                        <option value="choose">Select Firm</option>
+                                        <option>ABC</option>
+                                        <option>CDE</option>
+                                        <option>EFG</option>
+                                        <option>IJK</option>
+                                        <option>LMN</option>
+                        
+                                    </select>
+                                <p id="details">Establishment Year:</p>
+                                <input type="number" id="name" name="year" placeholder="Enter year">
+                            </form>    
+
+                            
+                        </div>
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-4">
+                                <form target="blank" action="message.html" name="myForm2" onsubmit="return validateForm()" method="POST" id="dtl">
+                                <h4>Address Details</h4>
+                                <p id="details">Door no:</p>
+                                <input type="text" id="name" placeholder="Enter Door no"name="door">
+                                <p id="details">Locality:</p>
+                                <input id="name" type="text" name="locality" placeholder="Enter local area">
+                                <p id="details">State:</p>
+                                <select name="state" id="option" name="state" >
+                                    <option value="Select state">Select State</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <option value="karnataka">karnataka</option>
+                                    <option value="mumbai">mumbai</option>
+                                </select>
+                                <p id="details">Address type:</p>
+                                <input type="radio" name="Home" id="addtype"><span id="addtype">Home</span>&nbsp;&nbsp;
+                                <input type="radio" name="Bussiness" id="addtype"><span id="addtype">Bussiness</span>&nbsp;
+
+                                </select>
+                                <p id="details">pin code:</p>
+                                <input type="number" id="name" name="pin" placeholder="xxxxxx">
+                                <p id="details">Alternate Phone no:</p>
+                                <input type="number" id="name" name="phone" placeholder="xxxxxxxxxx">
+                            </form>
+
+                        </div>
+                        <div class="col-md-1">
+                            <!---blank--->
+                        </div>
+                    </div>
+                    <form target="blank" action="message.html" name="myForm" onsubmit="return validateForm()" method="POST" id="dtl">
+                        <input id="sub" type="submit" value="Submit" >
+                    </form>
+
+                </div>  
+        </div>           
+</body>
+
+</html>

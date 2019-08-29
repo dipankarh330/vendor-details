@@ -1,0 +1,94 @@
+body{
+    background: url(back1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container-fluid{
+    padding: 50px;
+
+}
+.container{
+    padding: 50px;
+    background-color:rgba(1, 8, 15, 0.644);
+}
+
+p{
+    padding: 4px;
+    font-size: 20px;
+    color: rgba(236, 234, 231, 0.959);
+}
+h2{
+    padding: 8px;
+    color: white;
+    background-color: rgb(207, 58, 21);
+}
+h3{
+    padding: 8px;
+    color: azure;
+}
+h4{
+    color: blanchedalmond;
+}
+#s{
+    color: aliceblue;
+    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: solid;
+    padding-bottom: 20px;
+}
+
+#dtl{
+    padding: 8px;
+    font-size: 16px;
+    color: aliceblue;
+}
+#name{
+    padding: 3px;
+    padding-left: 15px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 15px;
+}
+#ph{
+    padding: 5px;
+    border-radius: 8px;
+    width: 20%;
+}
+#addtype{
+    font-size: 18px;
+    
+}
+#addtype:hover{
+    cursor: pointer;
+    color: orange;
+}
+#option{
+    padding: 3px;
+    padding-left: 15px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 15px;
+
+}
+#num{
+    padding: 5px;
+    border-radius: 8px;
+    width: 100%;
+}
+#sub{
+    border-radius: 3px;
+    color: black ;
+    align-self: center;
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+}
+#sub:hover{
+    cursor: pointer;
+    background-color: orangered;
+    color: rgb(255, 251, 0);
+}
